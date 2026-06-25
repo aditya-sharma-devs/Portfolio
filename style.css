@@ -573,6 +573,9 @@ footer {
     gap: 16px;
   }
 
+  .hero-tagline{
+    width: 350px;
+  }
   #home{
     align-items: start;
     min-height: 70vh;
