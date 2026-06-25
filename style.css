@@ -84,7 +84,7 @@ nav {
 
 /* ─── HERO ─────────────────────────────────────────── */
 #home {
-  min-height: 92vh;
+  min-height: 65vh;
   display: flex;
   align-items: center;
   background: var(--ink);
@@ -573,11 +573,8 @@ footer {
     gap: 16px;
   }
 
-  .hero-tagline{
-    width: 350px;
-  }
   #home{
     align-items: start;
-    min-height: 70vh;
+    min-height: 50vh;
   }
 }
