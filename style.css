@@ -555,6 +555,10 @@ footer {
 
 /* ─── RESPONSIVE ───────────────────────────────────── */
 @media (max-width: 768px) {
+  .nav-links{
+    display: none;
+  }
+
   .hero-inner,
   .about-grid,
   .contact-grid {
@@ -564,10 +568,16 @@ footer {
   .hero-avatar {
     display: none;
   }
-  nav {
-    top: 38px;
-  }
   .nav-links {
     gap: 16px;
+  }
+
+  .hero-tagline{
+    width: 100%;
+  }
+
+  #home{
+    align-items: start;
+    min-height: 70vh;
   }
 }
