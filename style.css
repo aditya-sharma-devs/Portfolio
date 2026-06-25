@@ -574,7 +574,7 @@ footer {
   }
 
   .hero-tagline{
-    width: 320px;
+    width: clamp(300px, 80vw, 460px)
   }
 
   #home{
