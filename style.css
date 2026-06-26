@@ -90,7 +90,7 @@ section {
 .container {
   max-width: 1080px;
   width: 100%;
-  padding: 0 2vw;
+  padding: 0 5vw;
 }
 
 /* ─── Scrollbar ─────────────────────────────────── */
@@ -224,7 +224,7 @@ nav {
 }
 
 .hero-text {
-  width: clamp(310px, 350px, 380px);
+  width: clamp(300px, 90vw, 380px);
 }
 
 .hero-eyebrow {
@@ -289,6 +289,7 @@ nav {
 
 .hero-wrapper {
   animation: floater1 3s ease-in-out infinite;
+  width: clamp(300px, 90vw, 360px);
 }
 
 .hero-editor {
@@ -917,10 +918,6 @@ footer .year-element {
   }
   .nav-links {
     gap: 16px;
-  }
-
-  .hero-tagline {
-    width: clamp(300px, 80vw, 460px);
   }
 
   #home {
