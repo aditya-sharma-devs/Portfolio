@@ -906,10 +906,6 @@ footer .year-element {
     display: none;
   }
 
-  .container{
-    display: flex;
-    justify-content: center;
-  }
 
   .hero-inner,
   .about-grid,
@@ -917,6 +913,7 @@ footer .year-element {
     grid-template-columns: 1fr;
     width: fit-content;
     gap: 32px;
+    margin: 0 auto;
   }
   .hero-avatar {
     display: none;
