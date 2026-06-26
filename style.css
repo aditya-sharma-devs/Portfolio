@@ -90,8 +90,7 @@ section {
 .container {
   max-width: 1080px;
   width: 100%;
-  margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 2vw;
 }
 
 /* ─── Scrollbar ─────────────────────────────────── */
@@ -220,8 +219,12 @@ nav {
 
   display: grid;
   grid-template-columns: 1fr 360px;
-  gap: 64px;
+  justify-content: space-between;
   align-items: center;
+}
+
+.hero-text {
+  width: clamp(310px, 350px, 380px);
 }
 
 .hero-eyebrow {
@@ -285,8 +288,6 @@ nav {
 }
 
 .hero-wrapper {
-    width: clamp(300px, 330px, 360px);
-  height: 340px;
   animation: floater1 3s ease-in-out infinite;
 }
 
@@ -340,7 +341,7 @@ nav {
   padding: 24px;
 }
 
-.editor-body code{
+.editor-body code {
   font-size: 15px;
   line-height: 1rem;
 }
@@ -906,7 +907,6 @@ footer .year-element {
     display: none;
   }
 
-
   .hero-inner,
   .about-grid,
   .contact-grid {
@@ -914,9 +914,6 @@ footer .year-element {
     width: fit-content;
     gap: 32px;
     margin: 0 auto;
-  }
-  .hero-avatar {
-    display: none;
   }
   .nav-links {
     gap: 16px;
