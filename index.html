@@ -42,9 +42,11 @@
             </p>
             <a href="#contact" class="hero-cta">Get in Touch →</a>
           </div>
-          <div class="hero-avatar">
-            <!-- Replace emoji with your photo using: <img src="your-photo.jpg" style="width:100%;height:100%;object-fit:cover;border-radius:12px;"> -->
-            <span title="Replace with your photo">🧑‍💻</span>
+          <div class="hero-wrapper">
+            <div class="hero-avatar">
+              <!-- Replace emoji with your photo using: <img src="your-photo.jpg" style="width:100%;height:100%;object-fit:cover;border-radius:12px;"> -->
+              <span title="Replace with your photo">🧑‍💻</span>
+            </div>
           </div>
         </div>
       </div>
@@ -277,9 +279,18 @@
           <div>
             <form class="contact-form">
               <input type="text" placeholder="Your Name" name="name" required />
-              <input type="email" placeholder="Your Email" name="email" required />
-              <input type="text" placeholder="Subject" name="subject"/>
-              <textarea placeholder="Your Message…" name="message" required></textarea>
+              <input
+                type="email"
+                placeholder="Your Email"
+                name="email"
+                required
+              />
+              <input type="text" placeholder="Subject" name="subject" />
+              <textarea
+                placeholder="Your Message…"
+                name="message"
+                required
+              ></textarea>
               <button type="submit">Send Message ✉️</button>
             </form>
           </div>
@@ -288,7 +299,10 @@
     </section>
 
     <!-- FOOTER -->
-    <footer>Made with ❤️ by <strong>Aditya Sharma</strong> · <span class="year-element"></span></footer>
+    <footer>
+      Made with ❤️ by <strong>Aditya Sharma</strong> ·
+      <span class="year-element"></span>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="script.js"></script>

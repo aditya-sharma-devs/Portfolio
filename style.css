@@ -152,6 +152,11 @@ nav {
   transform: translateY(-2px);
   box-shadow: 0 8px 28px rgba(42, 110, 255, 0.45);
 }
+
+.hero-wrapper{
+  animation: floater1 3s ease-in-out infinite;
+}
+
 .hero-avatar {
   width: 280px;
   height: 340px;
@@ -163,6 +168,12 @@ nav {
   font-size: 5rem;
   justify-self: end;
   border: 2px solid rgba(255, 255, 255, 0.08);
+  transition: transform 0.8s ease-in-out;
+}
+
+.hero-avatar.hovered{
+  cursor: default;
+  transform: rotateY(180deg) scale(1.05);
 }
 
 /* ─── SECTION TITLES ───────────────────────────────── */
