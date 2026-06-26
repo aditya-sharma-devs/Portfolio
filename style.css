@@ -28,7 +28,7 @@
   --hero-start: #1a1a2e;
   --hero-mid: #16213e;
   --hero-end: #0f3460;
-  --hero-glow: rgba(42,110,255,.18);
+  --hero-glow: rgba(42, 110, 255, 0.18);
 
   /* Gradients */
   --gradient-primary: linear-gradient(
@@ -42,12 +42,11 @@
 
   --gradient-skill: linear-gradient(90deg, var(--accent), var(--accent-light));
 
-
   /* Contact */
-  --muted-medium: rgba(255,255,255,.6);
+  --muted-medium: rgba(255, 255, 255, 0.6);
 
---surface-dark: rgba(255,255,255,.08);
---surface-input: rgba(255,255,255,.07);
+  --surface-dark: rgba(255, 255, 255, 0.08);
+  --surface-input: rgba(255, 255, 255, 0.07);
 
   /* Shadows */
   --shadow-blue: 0 8px 28px rgba(42, 110, 255, 0.45);
@@ -220,7 +219,7 @@ nav {
   z-index: 1;
 
   display: grid;
-  grid-template-columns: 1fr 340px;
+  grid-template-columns: 1fr 360px;
   gap: 64px;
   align-items: center;
 }
@@ -289,28 +288,77 @@ nav {
   animation: floater1 3s ease-in-out infinite;
 }
 
-.hero-avatar {
-  width: 280px;
+.hero-editor {
+  width: 360px;
   height: 340px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  justify-self: end;
-
-  font-size: 5rem;
-
-  background: var(--gradient-primary);
-
-  border: 2px solid var(--border-light);
-  border-radius: 12px;
-
+  background: #1e1e1e;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid #30363d;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
   transition: transform 0.8s ease-in-out;
+  opacity: 0.8;
 }
 
-.hero-avatar.hovered {
+.hero-editor.hovered {
   cursor: default;
   transform: rotateY(180deg) scale(1.05);
+}
+
+.editor-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 25px;
+  padding: 12px 16px;
+
+  background: #252526;
+}
+
+.red {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ff5f57;
+}
+
+.yellow {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #febc2e;
+}
+
+.green {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #28c840;
+}
+
+.editor-body {
+  padding: 24px;
+  line-height: 1;
+}
+
+.editor-body code{
+  font-size: 15px;
+}
+
+.keyword {
+  color: #569cd6;
+}
+
+.property {
+  color: #9cdcfe;
+}
+
+.string {
+  color: #ce9178;
+}
+
+.boolean {
+  color: #4ec9b0;
 }
 
 /* ─── SECTION TITLES ───────────────────────────────── */
@@ -687,7 +735,7 @@ nav {
 /* ─── CONTACT ──────────────────────────────────────── */
 #contact {
   background: var(--ink);
-color:var(--text-light);
+  color: var(--text-light);
 }
 .contact-grid {
   display: grid;

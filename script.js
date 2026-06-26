@@ -10,20 +10,11 @@ heroTagline.textContent = "";
 nameWriter(heroName, heroName_text, 100);
 nameWriter(heroTagline, heroTagline_text, 15);
 
-const heroWrapper = document.querySelector(".hero-wrapper")
-const heroAvatar = document.querySelector(".hero-avatar");
 
 const form = document.querySelector(".contact-form");
 
 yearElement.forEach((element) => {
   element.textContent = year;
-});
-
-heroWrapper.addEventListener("mouseenter", () => {
-  heroAvatar.classList.add("hovered");
-});
-heroWrapper.addEventListener("mouseleave", () => {
-  heroAvatar.classList.remove("hovered");
 });
 
 function nameWriter(element, text, timeout, idx = 0) {
